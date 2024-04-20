@@ -1,0 +1,31 @@
+@import "mocha.css";
+
+* {
+  /* reference the color by using @color-name */
+  color: @text;
+  font-size: 14px;
+  border: none;
+  border-radius: 5;
+  font-family: IosevkaTermSlab Nerd Font;
+}
+
+window#waybar {
+  /* you can also GTK3 CSS functions! */
+  background-color: shade(@base, 0.9);
+  border: 2px solid alpha(@crust, 0.3);
+
+}
+
+#pulseaudio {
+	/*margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0;
+	border-radius: 26px;
+	transition: none;
+	color: @text;
+	background: #9aedfe;*/
+}
+
+

@@ -1,0 +1,130 @@
+{
+//    "layer": "top",
+    "mode": "dock",
+    "ipc": "true",
+    "bar_id": "bar_0",
+    "position": "top",
+    "spacing": 16,
+    "margin-bottom": -2,
+    "margin-top": 4,
+    "margin-left": 8,
+    "margin-right": 8,
+
+    "modules-left": [
+        "sway/workspaces"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "tray",
+        "network",
+        "battery",
+        "pulseaudio",
+        "custom/swww"
+    ],
+
+    "sway/taskbar": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "on-click-right": "fullscreen",
+        "icon-size": 25,
+        "tooltip-format": "{title}"
+    },
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "", // "",
+            "2": " ", // "",
+            "3": "", // "",
+            "4": "", // "",
+            "5": "", // "",
+	    "6": "l", // "󱢴 "
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+	    "6": [],
+        }
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p - %a, %d %b %Y}"
+    },
+    
+    "network": {
+        "format-wifi" : "{icon}",
+        "format-icons": ["󰤯 ","󰤟 ","󰤢 ","󰤥 ","󰤨 "],
+        "format-ethernet": " ",
+        "format-disconnected" : "󰤮 ",
+	      "interval": 5,
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "󰂰",
+        "nospacing": 1,
+        "format-muted": "󰝟 ",
+        "format-icons": {
+            "headphone": " ",
+            "default": [" "," " ,"  "]
+        },
+        "on-click": "pamixer -t",
+    },
+
+    "custom/swww": {
+      "format": " ",
+      "on-click": "bash ~/.config/wallpapers/wallpaperSet.sh"
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": {
+            "charging": [
+                "󰢜 ",
+                "󰂆 ",
+                "󰂇 ",
+                "󰂈 ",
+                "󰢝 ",
+                "󰂉 ",
+                "󰢞 ",
+                "󰂊 ",
+                "󰂋 ",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
+        },
+        "format-full": "Charged ",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+}
