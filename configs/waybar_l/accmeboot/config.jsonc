@@ -1,16 +1,17 @@
 {
   "layer": "top",
   "modules-left": ["custom/launcher", "wlr/taskbar", "hyprland/workspaces"],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["clock", "custom/cpu", "custom/gpu", "tray", "backlight", "pulseaudio", "battery"], 
+  /*"modules-center": ["hyprland/window"],*/
+  "modules-center": ["clock"],
+  "modules-right": ["custom/cpu", "custom/gpu", "tray", "backlight", "pulseaudio", "battery"], 
   "margin": "0",
 
-  "hyprland/window": {
+  /*"hyprland/window": {
     "format-empty": "nothing is running",
     "separate-outputs": true,
     "icon": true,
     "icon-size": 11
-  },
+  },*/
 
   "pulseaudio": {
     "tooltip": false,
@@ -63,7 +64,7 @@
   },
 
   "custom/launcher":{
-    "format": " ",
+    "format": "  ",
     "on-click": "hyprctl dispatch exec '[floating] wofi --show drun -normal-window'"
   },
 

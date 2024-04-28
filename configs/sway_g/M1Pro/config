@@ -1,0 +1,33 @@
+# Variables
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term alacritty # kitty, wezterm, foot
+set $menu wofi --show drun | xargs swaymsg exec --
+
+# Wallpaper & Monitors
+output * bg ~/pictures/wallpapers/mixed/angel_black.jpg fill
+output edp-1 scale 1.5 resolution 2560x1600 position 0,0
+
+# Styles
+font pango:Iosevka Nerd Font 12
+default_border none
+default_floating_border none
+
+# Binds
+# Display brightness
+bindsym XF86KbdBrightnessUp exec brightnessctl set 5%+
+bindsym XF86KbdBrightnessDown exec brightnessctl set 5%-
+
+# Volume Control
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+# Hides Waybar
+bindsym mod1+Escape exec pkill -SIGUSR1 '^waybar$'
+
+# Run capture.sh to take screenshot 
+bindsym $mod+Shift+T exec /home/tonizz/Documents/Customization/Screenshots/capture.sh
+
+
