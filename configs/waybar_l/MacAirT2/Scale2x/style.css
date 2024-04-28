@@ -1,0 +1,122 @@
+@import "./themes/catppuccin/mocha.css";
+
+* {
+  font-size: 16px;
+  font-family: IosevkaTermSlab Nerd Font;
+}
+
+window#waybar {
+  background: @mantle;
+  border-radius: 0px;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+.modules-left {
+  background: @surface0;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  padding: 0px 12px 0px 4px;
+}
+
+.modules-right {
+  background: @surface0;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  padding: 0px 4px 0px 12px;
+  font-weight: bold;
+}
+
+.modules-center {
+  background: transparent;
+}
+
+#window {
+  color: @text;
+  font-weight: bold;
+}
+
+#custom-launcher {
+  font-size: 16px;
+  font-weight: bold;
+  color: @blue;
+}
+
+#custom-launcher:hover {
+  color: @red;
+}
+
+#workspaces button {
+  padding: 0px;
+  border-radius: 0px;
+  margin: 0px;
+  color: @text;
+  font-weight: bold;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+#workspaces button.active {
+  color: @mauve;
+  border-bottom: 2px solid @mauve;
+}
+
+#taskbar {
+  background: @surface0;
+  padding: 0px 4px 1px;
+}
+
+#taskbar button {
+  border-radius: 0px;
+  transition: all 0.3s;
+  padding: 1px 2px 0px 4px;
+  margin: 0px;
+  opacity: 0.3;
+  background: transparent;
+}
+
+#taskbar button.active {
+  background: transparent;
+  opacity: 1;
+}
+
+#taskbar button:hover {
+  background: @surface3;
+  opacity: 0.8;
+}
+
+#custom-pacman {
+  color: @red;
+  margin-right: 8px;
+}
+
+#idle_inhibitor {
+  margin: 0px 4px;
+  color: @lavender;
+}
+#clock,
+#tray,
+#backlight,
+#pulseaudio,
+#battery,
+#custom-cpu,
+#custom-gpu {
+  margin: 0px 4px;
+}
+#custom-cpu {
+  color: @lavender;
+}
+#custom-gpu {
+  color: @blue;
+}
+#backlight,
+#pulseaudio,
+#battery {
+  color: @text;
+}
+
+#clock {
+  color: @green;
+}
