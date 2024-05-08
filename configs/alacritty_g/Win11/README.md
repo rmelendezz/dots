@@ -9,3 +9,5 @@
 # or you can run the following one-liner
 echo ./themes/{theme}.toml >> ./alacritty.toml
 ```
+- Install `Iosevka Nerd Font` if other font is used, edit `alacritty.toml`
+    - [Iosevka Source](https://www.nerdfonts.com/font-downloads)
