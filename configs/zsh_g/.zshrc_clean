@@ -24,11 +24,25 @@ prompt typewritten
 
 # Useful aliasses with exa and icons
 # Note: if using WSL2 Place these alisses all the way at the end!
-alias la="eza --long --header --icons -a -l"
-alias ls="eza --long --header --icons -a"
+# alias la="eza --long --header --icons -a -l"
+# alias ls="eza --long --header --icons -a"
 alias vi="nvim"
 alias cat="bat"
 alias lg="lazygit"
+alias vc="code"
+alias c='clear' # clear terminal
+alias l='eza -lh  --icons=auto' # long list
+alias ls='eza -1   --icons=auto' # short list
+alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
+alias ld='eza -lhD --icons=auto' # long list dirs
+alias lt='eza --icons=auto --tree' # list folder as tree
+
+# Handy change dir shortcuts
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
 
 # source antidote, zsh plugin manager, added Jan 2024
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
@@ -37,5 +51,3 @@ source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 
 # initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
