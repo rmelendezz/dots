@@ -48,12 +48,10 @@ window#waybar {
 #disk,
 #clock,
 #memory,
-/*#network,*/
 #workspaces,
 #battery,
 #idle_inhibitor,
-#custom-cpu,
-#custom-spotify,
+#custom-cpu
 #tray {
   color: #d5c4a1;
   background: #433e3c;
@@ -64,4 +62,3 @@ window#waybar {
   margin-bottom: 4px;
   border-radius: 18px;
 }
-

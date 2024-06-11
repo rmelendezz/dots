@@ -4,10 +4,13 @@
   "position": "top", 
   "height": 28,
   "reload_style_on_change": true,
-
-  "modules-left": [ "custom/spotify", "custom/cpu", "memory", "disk", "battery" ],
+  "height": 4,
+  "margin-top": 4,
+  "margin-left": 10,
+  "margin-right": 10,
+  "modules-left": [ "custom/spotify", "custom/cpu", "memory", "disk" ],
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [ "network", "clock#time", "tray", "idle_inhibitor" ],
+  "modules-right": [ "battery", "clock#time", "tray", "idle_inhibitor" ],
 
   "custom/spotify": {
     "exec": "$HOME/.config/waybar/scripts/spotify.py --player spotify",
@@ -51,7 +54,7 @@
       }
   },
 
-  "network": {
+ /* "network": {
 	"interval": 1,
 	"format-wifi": "<span foreground='#d79921'>{icon}  </span>{essid}<span foreground='#d79921'>      </span>{bandwidthUpBytes}<span foreground='#d79921'>     </span>{bandwidthDownBytes} ",
     "format-disconnected": "",
@@ -66,7 +69,7 @@
 		"󰤨 "
 	]
   },
-
+*/
   "clock#time": {
     "interval": 1,
     "format": "<span foreground='#d79921' size='10000'> </span>{:%I:%M %p} ",
