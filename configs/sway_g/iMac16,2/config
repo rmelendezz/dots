@@ -107,6 +107,9 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 bindsym $mod+r mode "resize"
 
+# Hide waybar/enable
+bindsym $mod+escape exec killall -SIGUSR1 waybar
+
 mode "resize" {
 bindsym $left resize shrink width 20px
 bindsym $down resize grow height 20px
@@ -121,6 +124,10 @@ bindsym Right resize grow width 20px
 bindsym Return mode "default"
 bindsym Escape mode "default"
 }
+
+# Lock screen
+set $lockman exec bash ~/.config/sway/lockman.sh
+bindsym $mod+Shift+p exec $lockman
 
 # includes
 include /etc/sway/config.d/*
