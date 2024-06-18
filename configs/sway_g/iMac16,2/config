@@ -8,11 +8,12 @@ output DP-1 mode 2560x1440@144Hz
 gaps inner 4
 gaps outer 4
 
-default_border pixel 4
-default_floating_border pixel 4
+default_border pixel 3
+default_floating_border pixel 3
 
 # class border backgr. text indicator child_border
-client.focused #303536 #303536 #d4be98 #303536 #303536
+# client.focused #303536 #303536 #d4be98 #303536 #303536 # Gray color
+client.focused #d4422f #d4422f #d4422f #d4422f #d4422f 
 client.focused_inactive #303536 #303536 #d4be98 #303536 #303536
 client.unfocused #0a0b0b #303536 #d4be98 #0a0b0b #0a0b0b
 client.urgent #d8a657 #303536 #1d2021 #d8a657 #d8a657
@@ -23,7 +24,7 @@ client.placeholder #7daea3 #303536 #1d2021 #7daea3 #7daea3
  blur_xray disable
  blur_passes 0
  blur_radius 5
- shadows enable
+ shadows disable
  corner_radius 8
  layer_effects "waybar" shadows enable; corner_radius 8; blur disable
 
@@ -106,6 +107,11 @@ bindsym $mod+f fullscreen
 bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 bindsym $mod+r mode "resize"
+
+# Personal binds
+# Moves container to scratchpad
+bindsym $mod+Shift+m move container to scratchpad
+bindsym $mod+m scratchpad show
 
 # Hide waybar/enable
 bindsym $mod+escape exec killall -SIGUSR1 waybar
