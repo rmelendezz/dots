@@ -4,6 +4,7 @@ output * background /home/toniiz/Pictures/bisbiswas.jpg fill
 
 output DP-3 mode 4096x2304@60Hz
 output DP-1 mode 2560x1440@144Hz
+# run `swaymsg -t get_output` to get monitor information
 
 gaps inner 4
 gaps outer 4
