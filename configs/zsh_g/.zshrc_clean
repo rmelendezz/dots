@@ -1,10 +1,10 @@
 # Created by newuser for 5.8.1
 # custom options for typewritten, Global Setting
-export TYPEWRITTEN_PROMPT_LAYOUT="pure_verbose"
+export TYPEWRITTEN_PROMPT_LAYOUT="pure"
 export TYPEWRITTEN_COLOR_MAPPINGS="primary:white;secondary:white"
 export TYPEWRITTEN_COLORS="arrow:white;symbol:white"
 export TYPEWRITTEN_SYMBOL=""
-export TYPEWRITTEN_ARROW_SYMBOL=""
+export TYPEWRITTEN_ARROW_SYMBOL=""
 export TYPEWRITTEN_CURSOR="underscore"
 
 # Aliasses
@@ -36,6 +36,7 @@ alias ls='eza -1   --icons=auto' # short list
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias ld='eza -lhD --icons=auto' # long list dirs
 alias lt='eza --icons=auto --tree' # list folder as tree
+alias lz='lazygit' # Opens up lazygit
 
 # Handy change dir shortcuts
 alias ..='cd ..'

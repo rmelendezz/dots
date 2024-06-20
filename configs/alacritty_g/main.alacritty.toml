@@ -26,8 +26,20 @@ white = '0xd4be98'
 [font]
 size = 16
 
+[font.bold]
+family = "Iosevka Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "FantasqueSansM Nerd Font" 
+style = "Bold Italic"
+
+[font.italic]
+family = "FantasqueSansM Nerd Font"
+style = "Italic"
+
 [font.normal]
-family = "JetBrains Mono Nerd Font"
+family = "FantasqueSansM Nerd Font"
 style = "Regular"
 
 [shell]
