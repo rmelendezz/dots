@@ -7,7 +7,7 @@ font pango:Maple Mono NF 8
 
 # Monitors
 set $pm eDP-1
-set $sm DP-1
+set $sm DP-2
 
 # Start autotiling
 exec_always --no-startup-id autotiling
