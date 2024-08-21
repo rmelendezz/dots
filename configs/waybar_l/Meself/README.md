@@ -2,6 +2,8 @@
 # Waybar Semi-Self-Made Configs
 Semi made **Waybar** configs with its respective screenshots
 
+</div>
+
 ### Personal_Test
 This was just the first config I started working on at the beggining, essentially I did not knew that much about it and how it was configured #to-do *Take bar screenshot*
 
