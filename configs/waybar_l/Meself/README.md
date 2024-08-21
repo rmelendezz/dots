@@ -1,5 +1,7 @@
 <div align="center">
+
 # Waybar Semi-Self-Made Configs
+
 Semi made **Waybar** configs with its respective screenshots
 
 </div>
