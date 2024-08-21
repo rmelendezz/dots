@@ -6,4 +6,4 @@ This was just the first config I started working on at the beggining, essentiall
 ### Personal+ziap
 Almost a copy paste of ziap's waybar, I did changed a few things such as the bar `padding` and such, this is a very simple bar. Something I still not able to comprehend is the way he set up the `.module-right` variable
 
-![Personal_ziap.png](configs/waybar_l/img/Personal_ziap.png)
+![](img/Personal_ziap.png)
