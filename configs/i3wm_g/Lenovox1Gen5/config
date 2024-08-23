@@ -21,7 +21,7 @@ exec nitrogen --restore
 
 # Network Manager
 exec --no-startup-id nm-applet
-exec --no-startup-id picom &
+exec --no-startup-id picom
 exec_always caffeine
 exec_always --no-startup-id flashfocus
 # Hide Polybar

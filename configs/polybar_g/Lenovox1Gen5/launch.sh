@@ -5,7 +5,9 @@ polybar-msg cmd quit
 # Otherwise you can use the nuclear option:
 # killall -q polybar
 
-for m in $(polybar --list-monitors | cut -d":" -f1); do
-    MONITOR=$m polybar --reload barra1 &
-    MONITOR=$m polybar --reload barra2 &
+# Launch bar on each monitor, tray on primary
+polybar --list-monitors | while IFS=$'\n' read line; do
+  monitor=$(echo $line | cut -d':' -f1)
+  primary=$(echo $line | cut -d' ' -f3)
+  MONITOR=$monitor polybar --reload "top${primary:+"-primary"}" &
 done
