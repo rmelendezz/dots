@@ -1,0 +1,69 @@
+@define-color background #282A2E;
+@define-color foreground #C5C8C6;
+@define-color focused #fc893a;
+@define-color unfocused #edf0ef;
+@define-color occupied #F18850;
+@define-color urgent #f7768e;
+
+* {
+  font-family: "IosevkaTerm Nerd Font";
+  font-size: 24px;
+  min-height: 0px;
+}
+
+window#waybar {
+  color: @foreground;
+  background: @background;
+}
+
+#workspaces button {
+  padding: 2 14px;
+  color: @unfocused;
+  border-radius: 0px;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background: inherit;
+}
+
+#workspaces button.occupied {
+  color: @occupied;
+  font-weight: bold;
+}
+
+#workspaces button.active {
+  color: @focused;
+}
+
+#workspaces button.focused {
+  color: @focused;
+}
+
+#workspaces button.urgent {
+  color: @urgent;
+}
+
+.modules-left {
+  margin: 0px 0 0 0px;
+}
+
+.modules-right {
+  margin: 0px 0 0 0px;
+}
+
+#workspaces {
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+#tray {
+  margin-left: 8px;
+  font-size: 40px;
+}
+#battery,
+#network,
+#custom-clock {
+  padding: 0px 8px;
+}
