@@ -1,0 +1,144 @@
+{
+  "height": 25,
+  "modules-left": [
+    "custom/swww",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "custom/clock"
+  ],
+  "modules-right": [
+    "tray",
+    "custom/d",
+    "wireplumber",
+    "custom/d",
+    "idle_inhibitor",
+    "custom/d",
+    "backlight",
+    "custom/d",
+    "bluetooth",
+    "custom/d",
+    "network",
+    "custom/d",
+    "battery"
+  ],
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "  ",
+      "deactivated": "  "
+    }
+  },
+
+  "custom/swww": {
+    "format": " 󰣇 ",
+    "on-click": "bash ~/.local/bin/random-wall"
+  },
+
+  "battery": {
+      "format": "{icon} {capacity}%",
+      "format-icons": {
+          "charging": [
+              "󰢜 ",
+              "󰂆 ",
+              "󰂇 ",
+              "󰂈 ",
+              "󰢝 ",
+              "󰂉 ",
+              "󰢞 ",
+              "󰂊 ",
+              "󰂋 ",
+              "󰂅"
+          ],
+          "default": [
+              "󰁺",
+              "󰁻",
+              "󰁼",
+              "󰁽",
+              "󰁾",
+              "󰁿",
+              "󰂀",
+              "󰂁",
+              "󰂂",
+              "󰁹"
+          ]
+      },
+      "format-full": "Charged ",
+      "interval": 5,
+      "states": {
+          "warning": 20,
+          "critical": 10
+      },
+      "tooltip": false
+  },
+  "custom/d": {
+    "format": "  ",
+    "tooltip": false
+  },
+  "hyprland/workspaces": {
+    "disable-scroll": false,
+    "current-only": false,
+    "all-outputs": true,
+    "format": "{name}",
+    "format": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+   }
+  },
+  "tray": {
+    "icon-size": 14
+  },
+  "wireplumber": {
+    "format": "{volume}%  {icon}",
+    "format-muted": "  ",
+    "on-click": "pavucontrol  ",
+    "format-icons": ["  ", "  ", "  "]
+   },
+  "bluetooth": {
+    // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+    "format": "  󰂯 ",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": "  {num_connections}",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "on-click": "blueberry",
+    "cursor": false
+  },
+  "backlight": { // "device": "acpi_video1",
+    "device": "kbd_backlight",
+    "format": "{icon} ",
+    "format-icons": [
+            "󰃚 ",
+            "󰃛 ",
+            "󰃜 ",
+            "󰃜 ",
+            "󰃜 ",
+            "󰃝 ",
+            "󰃞 ",
+            "󰃟 ",
+            "󰃠 "
+    ],
+    "reverse-scrolling": true,
+    "tooltip-format": "Brightness: {percent}%",
+    "cursor": false
+    },
+  "custom/clock": {
+    "exec": "date +'%I:%M'",
+    "on-click": "month",
+    "on-click-right": "schedule",
+    "interval": 60
+  },
+  "network": {
+    /* "format-wifi": "直", */
+    "format-wifi": "{icon} ",
+    "format-ethernet": " 󰛳  ",
+    "format-disconnected": " 󰅛  ",
+    "tooltip-format": "{essid}",
+    "on-click": "",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
+    }
+}
