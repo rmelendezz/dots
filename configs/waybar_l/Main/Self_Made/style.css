@@ -6,8 +6,8 @@
 @define-color urgent #f7768e;
 
 * {
-  font-family: "IosevkaTerm Nerd Font";
-  font-size: 24px;
+  font-family: "Pragmasevka Nerd Font";
+  font-size: 26px;
   min-height: 0px;
 }
 
@@ -62,6 +62,7 @@ window#waybar {
   margin-left: 8px;
   font-size: 40px;
 }
+#backlight,
 #battery,
 #network,
 #custom-clock {

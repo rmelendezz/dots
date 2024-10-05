@@ -1,6 +1,9 @@
 {
   "height": 25,
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": [
+    "custom/swww",
+    "hyprland/workspaces"
+  ],
   "modules-center": [
     "custom/clock"
   ],
@@ -9,14 +12,67 @@
     "custom/d",
     "wireplumber",
     "custom/d",
+    "idle_inhibitor",
+    "custom/d",
+    "backlight",
+    "custom/d",
     "bluetooth",
     "custom/d",
     "network",
+    "custom/d",
     "battery"
   ],
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "  ",
+      "deactivated": "  "
+    }
+  },
 
+  "custom/swww": {
+    "format": " 󰣇 ",
+    "on-click": "bash ~/.local/bin/random-wall"
+  },
+
+  "battery": {
+      "format": "{icon} {capacity}%",
+      "format-icons": {
+          "charging": [
+              "󰢜 ",
+              "󰂆 ",
+              "󰂇 ",
+              "󰂈 ",
+              "󰢝 ",
+              "󰂉 ",
+              "󰢞 ",
+              "󰂊 ",
+              "󰂋 ",
+              "󰂅"
+          ],
+          "default": [
+              "󰁺",
+              "󰁻",
+              "󰁼",
+              "󰁽",
+              "󰁾",
+              "󰁿",
+              "󰂀",
+              "󰂁",
+              "󰂂",
+              "󰁹"
+          ]
+      },
+      "format-full": "Charged ",
+      "interval": 5,
+      "states": {
+          "warning": 20,
+          "critical": 10
+      },
+      "tooltip": false
+  },
   "custom/d": {
-    "format": " 󰇝 ",
+    "format": "  ",
     "tooltip": false
   },
   "hyprland/workspaces": {
@@ -53,6 +109,7 @@
     "cursor": false
   },
   "backlight": { // "device": "acpi_video1",
+    "device": "kbd_backlight",
     "format": "{icon} ",
     "format-icons": [
             "󰃚 ",
