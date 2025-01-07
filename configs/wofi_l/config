@@ -1,0 +1,10 @@
+allow_images=true
+image_size=20
+width=40%
+height=40%
+prompt=Search...
+show=drun
+location=center
+orientation=vertical
+haligh=fill
+lines=5
