@@ -1,0 +1,14 @@
+font-family = FantasqueSansM Nerd Font
+font-size = 15
+#window-padding-balance = true
+theme = GruvboxDark
+
+window-padding-x = 14
+window-padding-y = 14
+
+window-colorspace = "display-p3"
+
+# Keybinds
+keybind = ctrl+s>r=reload_config
+keybind = ctrl+s>x=close_surface
+keybind = ctrl+s>n=new_window
