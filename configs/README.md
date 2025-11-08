@@ -6,3 +6,5 @@ m = Mac only
 w = Windows only
 
 Also, I have separated MacOS app into its own folder to make it look much cleaner
+
+themed folder = Contains full themed installation of several Window Managers
