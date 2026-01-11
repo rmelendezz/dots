@@ -6,7 +6,7 @@ sudo pacman -S niri
 
 To have a better experience install all of the following packages
 ```bash
-sudo pacman -S fuzzel mako xdg-desktop-portal-gtk xdg-desktop-portal-gnome swaybg swayidle swaylock xwayland-satellite udiskie hyprlock hypridle waybar impala
+sudo pacman -S fuzzel mako xdg-desktop-portal-gtk xdg-desktop-portal-gnome swaybg swayidle swaylock xwayland-satellite udiskie hyprlock waybar
 ```
 
 ## Configuration
