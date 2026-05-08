@@ -24,25 +24,25 @@ cyan = '0x89b482'
 white = '0xd4be98'
 
 [font]
-size = 16
+size = 12
 
 [font.bold]
-family = "Iosevka Nerd Font"
+family = "FiraCode Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "FantasqueSansM Nerd Font" 
+family = "FiraCode Nerd Font Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "FantasqueSansM Nerd Font"
+family = "FiraCode Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "FantasqueSansM Nerd Font"
+family = "FiraCode Nerd Font Mono"
 style = "Regular"
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
 
 [window]
@@ -51,3 +51,5 @@ opacity = 1.000000
 [window.padding]
 x = 30
 y = 20
+
+[terminal]
