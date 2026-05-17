@@ -155,3 +155,19 @@ Change `inactive-color "#505050"` to `inactive-color "#7c6f64"`
 Settings for `output` would need to be change as per device. I am mostly using `niri` on desktops. To get what resolutions your display can take run `niri msg outputs`
 
 ## Independent File Configuration
+
+## Scripts & Good-To-Have
+### Media Player
+Bash script prompts you to paste a video link, usually from **youtube** opens it in `mpv` and uses `yt-dlp`. The scripts checks if all apps are installed locally. If not, it installs it.
+
+script location, `/dots/configs/niri_l/scripts/mpv-ulr-gruvbox-niri.sh`
+
+#### Installation
+1. `cp` `mpv-url-gruvbox-niri.sh` to `~/.config/niri/scripts/` make sure the script is executable `sudo chmod +x niri-utl-gruvbox-niri.sh`
+2. Add the following config settings to `niri` config file
+```bash
+binds {
+    // ... other binds
+    Mod+Alt+M { spawn "bash" "/home/toniiz/.config/niri/scripts/mpv-url-gruvbox-niri.sh"; }
+}
+```
